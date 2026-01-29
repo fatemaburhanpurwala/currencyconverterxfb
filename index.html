@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CurrencyX | Smart Currency Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0b1220, #0f1a2b);
+      color: #ffffff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(10, 20, 40, 0.8);
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: #4da3ff;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #4da3ff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px 80px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #cfd8ff;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+    .hero button {
+      margin-top: 40px;
+      padding: 15px 40px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #4da3ff, #1e6fff);
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      transform: scale(1.05);
+    }
+
+    .features {
+      padding: 80px 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .feature-box {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 30px;
+      transition: 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-8px);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .feature-box h3 {
+      margin-bottom: 12px;
+      color: #4da3ff;
+      font-size: 20px;
+    }
+
+    .feature-box p {
+      font-size: 14px;
+      color: #d0d6ff;
+      line-height: 1.6;
+    }
+
+    .about {
+      padding: 80px 60px;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .about h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .about p {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 16px;
+      color: #cfd8ff;
+      line-height: 1.8;
+    }
+
+    footer {
+      padding: 40px 60px;
+      background: #0a1020;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    footer h4 {
+      margin-bottom: 15px;
+      color: #4da3ff;
+    }
+
+    footer a {
+      display: block;
+      text-decoration: none;
+      color: #cfd8ff;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+
+    .copyright {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #9aa4ff;
+      background: #080d1a;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">CurrencyX</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="converter.html">Converter</a>
+      <a href="markets.html">Markets</a>
+      <a href="charts.html">Charts</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Smart & Real-Time Currency Converter</h1>
+    <p>
+      Convert currencies instantly using live exchange rates.  
+      Track global currencies, analyze market trends, and explore historical
+      exchange rate data with a modern and professional interface.
+    </p>
+
+    <a href="converter.html">
+      <button>Start Converting</button>
+    </a>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature-box">
+      <h3>Live Exchange Rates</h3>
+      <p>Get real-time currency rates from global financial markets with high accuracy.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>Historical Charts</h3>
+      <p>Analyze past currency trends with interactive historical exchange rate charts.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>All Country Currencies</h3>
+      <p>Access exchange rates for major and minor currencies from countries worldwide.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>Market Insights</h3>
+      <p>Monitor currency movements and market performance with smart analytics.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>Fast & Secure</h3>
+      <p>Optimized for speed with a clean and secure user experience.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>User Friendly</h3>
+      <p>Simple, professional design that works smoothly on all devices.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About CurrencyX</h2>
+    <p>
+      CurrencyX is a modern currency conversion platform designed to help users
+      explore real-time exchange rates, historical data, and global currency trends.
+      The platform focuses on clarity, accuracy, and ease of use.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <h4>CurrencyX</h4>
+      <p style="font-size:14px;color:#cfd8ff;">
+        Smart currency data and exchange rate insights for global markets.
+      </p>
+    </div>
+
+    <div>
+      <h4>Tools</h4>
+      <a href="converter.html">Currency Converter</a>
+      <a href="#">Historical Rates</a>
+      <a href="#">Market Analysis</a>
+      <a href="#">Rate Alerts</a>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div>
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    © 2026 CurrencyX. All rights reserved.
+  </div>
+
+</body>
+</html>

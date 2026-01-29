@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>CurrencyX – Currency Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body class="bg-[#0b0f1a] text-white min-h-screen">
+
+<!-- NAVBAR -->
+<nav class="flex justify-between items-center px-10 py-6 border-b border-slate-800">
+  <h1 class="text-3xl font-black">
+    Currency<span class="text-blue-500">X</span>
+  </h1>
+
+  <!-- LOGIN REMOVED -->
+  <div class="flex gap-6 font-bold">
+    <a href="index.html" class="hover:text-blue-400">Home</a>
+    <a href="converter.html" class="text-blue-400">Converter</a>
+  </div>
+</nav>
+
+<!-- CONVERTER -->
+<section class="flex justify-center items-center py-20">
+  <div class="bg-slate-900 p-10 rounded-3xl w-full max-w-xl shadow-2xl">
+
+    <h2 class="text-3xl font-black mb-8 text-center">Currency Converter</h2>
+
+    <!-- Amount -->
+    <input
+      id="amount"
+      type="number"
+      value="1"
+      class="w-full p-4 rounded-xl bg-slate-800 text-white text-xl mb-6"
+    >
+
+    <!-- FROM -->
+    <div class="flex items-center gap-4 mb-6">
+      <img id="fromFlag" class="w-12 h-12 rounded-full" />
+      <select id="fromCurrency" class="flex-1 p-4 rounded-xl bg-slate-800 text-white"></select>
+    </div>
+
+    <!-- SWAP BUTTON -->
+    <button
+      onclick="swapCurrencies()"
+      class="w-full my-4 py-3 bg-blue-600 rounded-xl flex justify-center items-center"
+    >
+      <span class="material-symbols-outlined text-3xl">
+        swap_vert
+      </span>
+    </button>
+
+    <!-- TO -->
+    <div class="flex items-center gap-4 mb-6">
+      <img id="toFlag" class="w-12 h-12 rounded-full" />
+      <select id="toCurrency" class="flex-1 p-4 rounded-xl bg-slate-800 text-white"></select>
+    </div>
+
+    <!-- CONVERT -->
+    <button
+      onclick="convertCurrency()"
+      class="w-full py-4 bg-blue-600 rounded-xl text-xl font-black"
+    >
+      Convert
+    </button>
+
+    <!-- RESULT -->
+    <p id="result" class="text-center mt-6 text-xl font-bold text-green-400"></p>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
